@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyPets - Food & Care</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.webp">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>    
+    <header class="main-header">
+        <nav class="navbar">
+            <section class="contenedor-nav"> 
+                <a href="#">
+                    <img src="../assets/icons/TastyPetsOriginal.png" alt="LogoPrincipal" class="navbar-logo"> 
+                </a>
+                <section class="header-center">
+                    <section class="search-bar">
+                        <input type="search" id="search-bar-space" placeholder="Buscar...">
+                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>                        
+                        </button>
+                        
+                    </section>
+                    <section class="nav-links">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>    
+                            <li><a href="Conócenos.html">Conócenos</a></li>
+                            <li><a href="Tienda.html">Tienda</a></li>    
+                            <li><a href="#">Peluqueria Canina</a></li>    
+                            <li><a href="EducaPet.html">EducaPet</a></li>
+                        </ul>
+                    </section>
+                </section>            
+                <section class="user-cart">
+                    <a href=""><i class="fas fa-user"></i></a>
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </section>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="carrusel-peluqueria">
+        </section>
+        <section class="principal-peluqueria">
+            <section class="formulario-peluqueria">
+                <h1 class="h1-peluqueria">¡AGENDA LA CITA DE BAÑO Y PELUQUERÍA</h1>
+                <h2 class="h2-peluqueria">Reserva tu hora en el siguiente formulario</h2>
+                <form action="" method="post">
+                    <div class="campo-formulario">
+                        <label for="nombre-cliente">Nombre:</label>
+                        <input type="text" id="nombre-cliente" name="nombre_cliente">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="email-cliente">Email:</label>
+                        <input type="email" id="email-cliente" name="email_cliente">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="teléfono-cliente">Teléfono:</label>
+                        <input type="tel" id="teléfono-cliente" name="teléfono_cliente">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="nombre-mascota">Nombre de la Mascota:</label>
+                        <input type="text" id="nombre-mascota" name="nombre_mascota">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="raza-mascota">Raza de la Mascota:</label>
+                        <input type="text" id="raza-mascota" name="raza_mascota">
+                    </div>
+                    <div class="campo-formulario">
+                        <p>Seleccione una Tienda:</p>
+                        <input class="input-radio" type="radio" id="tienda-lascabras" name="tienda_lascabras" required>
+                        <label for="tienda-lascabras">Tienda Las Cabras</label><br>
+                        <input class="input-radio" type="radio" id="tienda-rancagua" name="tienda_rancagua" required>
+                        <label for="tienda-rancagua">Tienda Rancagua</label><br>
+                        <input class="input-radio" type="radio" id="tienda-sanvicentett" name="tienda_sanvicentett" required>
+                        <label for="tienda-sanvicentett">Tienda San Vicente de Tagua Tagua</label><br>
+                        <input class="input-radio" type="radio" id="tienda-pichilemu" name="tienda_pichilemu" required>
+                        <label for="tienda-pichilemu">Tienda Pichilemu</label><br>
+                        <input class="input-radio" type="radio" id="tienda-sanfernando" name="tienda_sanfernando" required>
+                        <label for="tienda-sanfernando">Tienda San Fernando</label><br>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="fecha-servicio">Fecha deseada:</label>
+                        <input type="date" id="fecha-servicio" name="fecha_servicio">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="hora-servicio">Hora deseada:</label>
+                        <input type="time" id="hora-servicio" name="hora_servicio">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="comentarios-adicionales">Comentarios adicionales:</label>
+                        <textarea name="comentarios_adicionales" id="comentarios-adicionales" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="campo-formulario">
+                        <button type="submit">Enviar Solicitud</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-complete">
+            <section class="footer-section">
+                <h3>Localiza tu tienda</h3>
+                <p>Con orgullo formamos una familia con 5 tiendas TastyPets distribuidas en la Región de O'Higgins, garantizando que siempre tengas una tienda TastyPets cerca tuyo. ¡<a href="#">Busca la más cercana</a> y experimenta el mejor servicio para ti y tus mascotas!</p>
+            </section>
+            <section class="footer-section">
+                <h3>Mi cuenta</h3>
+                <ul>
+                    <li><a href="#">Entrar en mi cuenta</a></li>
+                    <li><a href="#">Mis Pedidos</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Guía de Compras</h3>
+                <ul>
+                    <li><a href="#">Información de envío</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Mail: <a href="#">ventas@tastypets.cl</a></li>
+                    <li>Teléfono: +569 72XX XXXX</li>
+                    <li>WhatsApp: <a href="web.whatsapp.com">+569 72XX XXXX</a></li>
+                    <li><a href="#">Canal de denuncias</a></li>
+                    <li>Servicio de atención: Lunes a Sábado 09:00 a 18:00 hrs</li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Trabaja con Nosotros</h3>
+                <ul>
+                    <li><a href="./pages/Conócenos.html">Acerca de TastyPets</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

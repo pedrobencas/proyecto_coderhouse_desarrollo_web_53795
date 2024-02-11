@@ -1,0 +1,549 @@
+:root {
+    background-color: #4d4d4d31;
+    max-width: 90vw;
+    margin: auto;
+    font-family: Roboto;
+    --naranjo: #E35F21;
+    --blanco: #EEF8F7;
+    --gris-claro: #9E9E9E;
+    --gris-medio: #6B6B6A;
+    --gris-oscuro: #4D4D4D;
+    --negro:#010506;
+    --amarillo-claro: #FFD647;
+    --amarillo-oscuro: #FAAB05;
+    --rojo: #8C0303;       
+}
+h2 {
+    text-align: center;
+}
+h2, p {
+    color: var(--blanco);
+}
+header {
+    background-color: var(--negro);
+    position: sticky;
+    top: 0;
+}
+a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--naranjo);
+}
+button {
+    background-color: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+button:hover {
+    background-color: var(--naranjo);
+    color: var(--blanco)
+}
+.contenedor-nav {
+    background-color: var(--negro);
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    max-width: 90vw;
+    margin: auto;
+    padding: 20px;
+}
+.navbar-logo {
+    height: 80px;
+    width: auto;
+    margin: 0 200px 0 100px;
+}
+.header-center {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+.search-bar input[type="search"]{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--gris-medio);
+    border-radius: 20px;
+    width: 50vw;
+    height: 2.5em;
+    text-indent: 5%;
+    color: var(--naranjo);
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+.search-bar button[type="submit"]{
+    position: absolute;
+    right: 5px;
+    top: 10%;
+    transform: translate(-200%);
+    background: none;
+    color: var(--naranjo);
+    border: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    margin: auto;    
+}
+
+.search-bar {
+    position: relative;
+    flex-grow: 1;
+    border-radius: 20px;
+    max-width: 50em;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    padding: 0px 10px;
+}
+.search-bar-space {
+    border-radius: 10px;
+}   
+.nav-links ul {
+    color:var(--blanco);
+    font-weight:500;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}  
+.nav-links li {
+    margin: 0 30px;
+    font-size: 1.2em;
+} 
+.user-cart {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--blanco);
+    font-size: 25px;
+    margin: 0 100px; 
+}
+.user-cart a :last-child {
+    padding: 0 20px;
+}
+.user-cart a:hover i{
+    color:var(--naranjo)
+}
+.carrusel {
+    background-image: url(../assets/img/akita.jpg);
+    background-size:cover;
+    background-position: center 15%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+}
+.carrusel-tienda {
+    background-image: url(../assets/img/tienda/banner-perro.png);
+    background-size:cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+}
+.carrusel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+.carrusel {
+    margin: auto;
+    max-width: 90vw;
+    position: relative;
+    z-index: 10;
+}
+.carrusel h1{
+    margin-top: 100px;
+    font-size: 3em;
+    margin-bottom: 0em;
+}
+.carrusel p{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+.boton-ir-tienda {
+    background-color: var(--naranjo);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.boton-ir-tienda:hover {
+    background-color: var(--gris-medio);
+}
+main {
+    background-color: var(--negro);
+}
+.nuestras-marcas, .productos-destacados, .quienes-somos, .noticias {
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.nuestras-marcas {
+    margin: auto;
+    max-width: 65vw;
+}
+.nuestras-marcas .brand-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nuestras-marcas .brand-logos img {
+    border: 3px solid var(--naranjo);
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    background-color: var(--gris-claro);
+    border-radius: 50%;
+}
+.productos-destacados {
+    max-width: 65vw;
+    margin: auto;
+    padding:0;
+} 
+.productos-destacados .productos {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.productos-destacados .productos .producto img{
+    border: 3px solid var(--naranjo);
+    object-fit:cover;
+    height: 17.5em;
+    background-color: var(--gris-claro);
+    border-radius: 0.5em;
+    max-width: 23em;
+}
+.quienes-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quienes-somos p{
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: auto;
+    padding-bottom: 1em;
+    width: 65vw;
+    text-align: justify;
+}
+.noticias {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
+    width: 65vw;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.noticias img {
+    margin: auto;
+    object-fit:cover;
+    height: 400px;
+    width: 30vw;
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+}
+.noticias .formulario h2 {
+    margin-bottom: 100px;
+}
+.noticias .formulario p{
+    font-weight: 500;
+    font-size: 1.1em;
+    text-align: justify;
+    margin-left: 40px;
+    max-width: 35vw;
+}
+.noticias form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    max-width: 35vw;
+    margin-top: 5px;
+}
+.noticias input[type="email"] {
+    border: 3px solid var(--naranjo);
+    text-indent: 5%;
+    width: 28vw;
+    font-weight: 500;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+.noticias button {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--naranjo);
+    color: var(--blanco);
+    border: none;
+    cursor: pointer;
+}
+.noticias button:hover {
+    background-color: var(--gris-medio);
+}
+.nuestra-historia, .nuestro-equipo-izq, .nuestro-equipo-der, .nuestra-familia ,.nuestro-compromiso, .testimonios, .compromiso-social {
+    padding: 20px;
+    margin-bottom: 20px;    
+}
+.nuestra-historia .contenedor-nuestra-historia {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.nuestra-historia-izq {
+    flex: 1;
+    max-width: 40%;
+    min-width: 40%;
+    margin-right: 20px;
+    text-align: justify;
+}
+.nuestra-historia-der img{
+    flex: 1;
+    object-fit:cover;
+    max-height: 350px;
+    background-color: var(--gris-claro);
+    border-radius: 0.5em;
+    align-items: center;
+}
+.nuestro-equipo {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.nuestro-equipo-izq{
+    flex-direction: column;
+}
+.carrusel-tienda h1 {
+    font-size: 5.8em;
+    transform: translateX(730px);
+    color: var(--naranjo);
+}
+.categorias {
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70%;
+}
+.categorias img{
+    margin: auto;
+    border: 3px solid var(--naranjo);
+    height: 120px;
+    width: 120px;
+    background-color: var(--gris-claro);
+    border-radius: 50%;
+}
+.introduccion h2 {
+    max-width: 70%;
+    text-align: justify;
+    margin: 20px auto;
+}
+.introduccion p{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: justify;
+    max-width: 70%;
+}
+.parrafo-color{
+    padding-top: 20px;
+    color: var(--naranjo);
+    font-weight: 500; 
+} 
+.principal-tienda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor-articulos-tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--naranjo);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.imagen-producto {
+    width: auto;
+    height: 300px;
+    
+}
+.nombre-producto, .precio-producto {
+    text-align: center;
+    color: var(--blanco);
+    margin: 10px;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrusel-peluqueria {
+    background-image: url(../assets/img/peluqueriacanina/banner-peluqueria.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+}
+.formulario-peluqueria {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.formulario-peluqueria h1 {
+    color: var(--blanco);
+    font-size: 2em;
+    text-align: center;
+}
+.formulario-peluqueria form {
+    display: flex;
+    color: var(--blanco);
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    max-width: 70%;
+    margin-top: 5px;
+}
+.formulario-peluqueria input[type="email"], input[type="radio"], input[type="text"], input[type="tel"], input[type="date"], input[type="time"], textarea, button {
+    margin: 10px auto;
+    border: 3px solid var(--naranjo);
+    text-indent: 5%;
+    width: 28vw;
+    font-weight: 500;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-align: center;
+}
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: var(--naranjo);
+    color: var(--blanco);
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer-complete {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 65vw;
+}
+.footer-section {
+    display: inline-block;
+    flex: 1, 1, 0;
+    margin-bottom: 20px;
+}
+.footer-section h3{
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 0.9em;
+    line-height: 2;
+    max-width: 250px;
+    text-align: justify;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section a {
+    color: var(--blanco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section a:hover {
+    color: var(--gris-medio);
+}
+@media (max-width: 768px){
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+}
