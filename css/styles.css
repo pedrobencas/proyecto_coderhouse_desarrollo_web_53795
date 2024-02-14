@@ -460,6 +460,42 @@ main {
     text-align: center;
     color: var(--blanco);
 }
+.contenedor-servicio {
+    display: flex;
+    color: var(--blanco);
+    margin: auto;
+    justify-content: space-evenly;
+    max-width: 75%;
+
+}
+.contenedor-servicio img {
+    height: 300px;
+    border-radius: 5px;
+    border: 3px solid var(--naranjo);
+    
+}
+.contenedor-servicio ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.3em;
+    text-align: left;
+    font-size: 1.4em;
+    text-decoration: none;
+    list-style-type: none;
+}
+.contenedor-img-baño {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+}
+.contenedor-img-baño img{
+    height: 250px;
+    clip-path: inset(15px); 
+}
+
+
 .formulario-peluqueria {
     display: flex;
     flex-direction: column;
