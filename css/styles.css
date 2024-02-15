@@ -530,6 +530,69 @@ main {
     flex-direction: column;
 }
 
+.articulo {
+    max-width: 75%;
+    border: 3px solid var(--naranjo);
+    padding:40px 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.articulo .fecha-articulo, .articulo .autor-articulo {
+    max-width: 95%;
+    text-align: right;
+}
+
+.articulo:last-child {
+    margin: 0 auto;
+}
+
+.articulo-titulo {
+    color: #333;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+.articulo div {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    text-align: justify;
+}
+.articulo p {
+    max-width: 35%;
+    margin-right: 0;
+}
+
+.articulo img {
+    border: 3px solid var(--naranjo);
+    max-width: auto;
+    height: 400px;
+    margin-right: 40px;
+    justify-items: flex-end;
+}
+
+.articulo-resumen {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #666;
+}
+.articulo button {
+    display: block;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: 20px auto;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--naranjo);
+    color: var(--blanco);
+    border: none;
+    cursor: pointer;
+}
+
 .footer {
     background-color: var(--naranjo);
     color: var(--blanco);
