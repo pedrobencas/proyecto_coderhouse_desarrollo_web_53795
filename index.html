@@ -10,132 +10,148 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 </head>
-<body>
-    
-    <header class="main-header">
-        <nav class="navbar">
-            <section class="contenedor-nav"> 
-                <a href="#">
-                    <img src="./assets/icons/TastyPetsOriginal.png" alt="LogoPrincipal" class="navbar-logo"> 
-                </a>
-                <section class="header-center">
-                    <section class="search-bar">
-                        <input type="search" id="search-bar-space" placeholder="Buscar...">
-                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>                        
-                        </button>
-                        
-                    </section>
-                    <section class="nav-links">
-                        <ul>
-                            <li><a href="#">Inicio</a></li>    
-                            <li><a href="./pages/QuienesSomos.html">Conócenos</a></li>
-                            <li><a href="./pages/Tienda.html">Tienda</a></li>    
-                            <li><a href="./pages/PeluqueriaCanina.html">Peluqueria Canina</a></li>    
-                            <li><a href="./pages/EducaPet.html">EducaPet</a></li>
-                        </ul>
-                    </section>
-                </section>            
-                <section class="user-cart">
-                    <a href=""><i class="fas fa-user"></i></a>
-                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+<body>    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/icons/TastyPetsOriginal.png" alt="LogoPrincipal" class="navbar-logo"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTastyPets" aria-controls="navbarTastyPets" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>        
+            <section class="collapse navbar-collapse" id="navbarTastyPets">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/QuienesSomos.html">Conócenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/Tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/PeluqueriaCanina.html">Peluqueria Canina</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/EducaPet.html">EducaPet</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <section class="user-cart d-flex">
+                    <a href="" class="nav-link"><i class="fas fa-user"></i></a>
+                    <a href="" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
                 </section>
             </section>
         </nav>
     </header>
+
     <main>
-        <section class="carrusel">
+        <section class="carrusel container-fluid">
             <h1>Somos TastyPets</h1>
             <p>Alimentos Premium y SuperPremium para tu regalón</p>
-            <a href="./pages/Tienda.html" class="boton-ir-tienda">Ir a la Tienda</a>
+            <a href="./pages/Tienda.html" class="btn btn-primary">Ir a la Tienda</a>
         </section>
-        <section class="nuestras-marcas">
+        <section class="nuestras-marcas container mt-4">
             <h2>Nuestras Marcas</h2>
-            <section class="brand-logos">
-                <img src="./assets/img/logos/acana.jpg" alt="">
-                <img src="./assets/img/logos/bravery.jpg" alt="">
-                <img src="./assets/img/logos/dogxtreme.jpg" alt="">
-                <img src="./assets/img/logos/logo-nath.jpg" alt="">
-                <img src="./assets/img/logos/pro-plan.jpg" alt="">
-                <img src="./assets/img/logos/royal-canin.jpg" alt="">
-                <img src="./assets/img/logos/wellness-core.jpg" alt="">
-                <img src="./assets/img/logos/logo-true-origins-web.jpg" alt="">  
-            </section>
+            <div class="row text-center">
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/acana.jpg" alt="Acana" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/bravery.jpg" alt="Bravery" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/dogxtreme.jpg" alt="Dogxtreme" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/logo-nath.jpg" alt="Nath" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/pro-plan.jpg" alt="Pro Plan" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/royal-canin.jpg" alt="Royal Canin" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/wellness-core.jpg" alt="Wellness Core" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                    <img src="./assets/img/logos/logo-true-origins-web.jpg" alt="True Origins" class="img-fluid">
+                </div>
+            </div>
         </section>
-        <section class="productos-destacados">
+        <section class="productos-destacados container mt-4">
             <h2>Productos Destacados</h2>
-            <section class="productos">
-                <section class="producto"><img src="./assets/img/destacados/alimento perro.jpg" alt="alimento-perro"></section>
-                <section class="producto"><img src="./assets/img/destacados/alimento-gato.jpg" alt="alimento-perro"></section>
-                <section class="producto"><img src="./assets/img/destacados/antiparasitario.jpg" alt="alimento-perro"></section>
-            </section>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <img src="./assets/img/destacados/alimento perro.jpg" alt="alimento-perro" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <img src="./assets/img/destacados/alimento-gato.jpg" alt="alimento-gato" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <img src="./assets/img/destacados/antiparasitario.jpg" alt="antiparasitario" class="img-fluid">
+                </div>
+            </div>
         </section>
-        <section class="quienes-somos">
-            <h2>Quienes Somos</h2>
-            <p>En TastyPets, somos más que una cadena de tiendas; somos una familia apasionada por los animales y especialmente por nuestros perros. Nuestro amor y dedicación por ellos nos han impulsado a buscar siempre lo mejor para su bienestar y salud. Fue este deseo de ofrecer a nuestros fieles compañeros lo mejor de lo mejor lo que dio origen a nuestro proyecto familiar: TastyPets.
-                <p>Nuestra misión es clara: proveer alimentos de calidad premium y superpremium, así como artículos esenciales para el cuidado de nuestros regalones.Entendemos la importancia de nutrir y cuidar a nuestras mascotas con productos de la más alta calidad, porque para nosotros, ellos son parte de la familia.</p>                    
-                <p>Con orgullo, contamos con 5 tiendas distribuidas en la región de O'Higgins, consolidándonos como el mayor comercializador de alimentos premium y superpremium en la región. Cada una de nuestras tiendas refleja el compromiso y el amor que tenemos por el bienestar animal, ofreciendo una experiencia de compra única y personalizada para cada uno de nuestros clientes y sus mascotas.</p>                    
-                <p>En TastyPets, creemos que cada mascota merece lo mejor, y estamos aquí para asegurarnos de que lo reciban. Bienvenido a nuestra familia, donde el amor por los animales es el corazón de todo lo que hacemos.</p>
+        <section class="quienes-somos container mt-4">
+            <h2>Quiénes Somos</h2>
+            <p>En TastyPets, somos más que una cadena de tiendas; somos una familia apasionada por los animales y especialmente por nuestros perros...</p>                    
+            <p>Nuestra misión es clara: proveer alimentos de calidad premium y superpremium, así como artículos esenciales para el cuidado de nuestros regalones...</p>                    
+            <p>Con orgullo, contamos con 5 tiendas distribuidas en la región de O'Higgins, consolidándonos como el mayor comercializador de alimentos premium y superpremium en la región...</p>                    
+            <p>En TastyPets, creemos que cada mascota merece lo mejor, y estamos aquí para asegurarnos de que lo reciban. Bienvenido a nuestra familia, donde el amor por los animales es el corazón de todo lo que hacemos.</p>
         </section>
-        <section class="noticias">
-            <img src="./assets/img/newsletter.jpg" alt="imagen-noticia">
-            <section class="formulario">
-                <h2>¿Quieres recibir ofertas en tu email?</h2>
-                <p>Únase a nuestra newsletter y recibirás toda la información sobre nuestros productos, promociones y campañas. Sé el primero en enterarte de todo...</p>
-                <form action="path-to-subscription-service" method="post">
-                    <input type="email" name="email" placeholder="Email">
-                    <button type="submit">¡Únete!</button>
-                </form>
-            </section>            
-        </section>
+        <section class="noticias container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./assets/img/newsletter.jpg" alt="imagen-noticia" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="formulario">
+                        <h2>¿Quieres recibir ofertas en tu email?</h2>
+                        <p>Únase a nuestra newsletter y recibirás toda la información sobre nuestros productos, promociones y campañas. Sé el primero en enterarte de todo...</p>
+                        <form action="path-to-subscription-service" method="post">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">¡Únete!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>        
     </main>
-
-
-
-
-
-
-    <footer class="footer">
-        <section class="footer-complete">
-            <section class="footer-section">
-                <h3>Localiza tu tienda</h3>
-                <p>Con orgullo formamos una familia con 5 tiendas TastyPets distribuidas en la Región de O'Higgins, garantizando que siempre tengas una tienda TastyPets cerca tuyo. ¡<a href="#">Busca la más cercana</a> y experimenta el mejor servicio para ti y tus mascotas!</p>
-            </section>
-            <section class="footer-section">
-                <h3>Mi cuenta</h3>
-                <ul>
-                    <li><a href="#">Entrar en mi cuenta</a></li>
-                    <li><a href="#">Mis Pedidos</a></li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <h3>Guía de Compras</h3>
-                <ul>
-                    <li><a href="#">Información de envío</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <h3>Contacto</h3>
-                <ul>
-                    <li>Mail: <a href="#">ventas@tastypets.cl</a></li>
-                    <li>Teléfono: +569 72XX XXXX</li>
-                    <li>WhatsApp: <a href="web.whatsapp.com">+569 72XX XXXX</a></li>
-                    <li><a href="#">Canal de denuncias</a></li>
-                    <li>Servicio de atención: Lunes a Sábado 09:00 a 18:00 hrs</li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <h3>Trabaja con Nosotros</h3>
-                <ul>
-                    <li><a href="./pages/Conócenos.html">Acerca de TastyPets</a></li>
-                    <li><a href="#">Trabaja con Nosotros</a></li>
-                </ul>
+    <footer class="footer bg-dark text-light pt-4 pb-2">
+        <section class="container">
+            <section class="row">
+                <section class="col-sm-6 col-md-3">
+                    <h3>Localiza tu tienda</h3>
+                    <p>Con orgullo formamos una familia con 5 tiendas TastyPets distribuidas en la Región de O'Higgins...</p>
+                </section>
+                <section class="col-sm-6 col-md-3">
+                    <h3>Mi cuenta</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Entrar en mi cuenta</a></li>
+                        <li><a href="#" class="text-light">Mis Pedidos</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-6 col-md-3">
+                    <h3>Guía de Compras</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Información de envío</a></li>
+                        <li><a href="#" class="text-light">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="text-light">Términos y condiciones</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-6 col-md-3">
+                    <h3>Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li>Mail: ventas@tastypets.cl</li>
+                        <li>Teléfono: +569 72XX XXXX</li>
+                        <li>WhatsApp: +569 72XX XXXX</li>
+                        <li><a href="#" class="text-light">Canal de denuncias</a></li>
+                        <li>Servicio de atención: Lunes a Sábado 09:00 a 18:00 hrs</li>
+                    </ul>
+                </section>
             </section>
         </section>
-    </footer>
+    </footer>    
 </body>
 </html>
