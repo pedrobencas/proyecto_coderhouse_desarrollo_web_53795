@@ -5,42 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TastyPets - Food & Care</title>
     <link rel="icon" type="image/x-icon" href="../favicon.webp">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles_anteriores.css">
 </head>
 <body>    
-    <header class="main-header">
-        <nav class="navbar">
-            <section class="contenedor-nav"> 
-                <a href="#">
-                    <img src="../assets/icons/TastyPetsOriginal.png" alt="LogoPrincipal" class="navbar-logo"> 
-                </a>
-                <section class="header-center">
-                    <section class="search-bar">
-                        <input type="search" id="search-bar-space" placeholder="Buscar...">
-                        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>                        
-                        </button>
-                        
-                    </section>
-                    <section class="nav-links">
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>    
-                            <li><a href="Conócenos.html">Conócenos</a></li>
-                            <li><a href="Tienda.html">Tienda</a></li>    
-                            <li><a href="#">Peluqueria Canina</a></li>    
-                            <li><a href="EducaPet.html">EducaPet</a></li>
-                        </ul>
-                    </section>
-                </section>            
-                <section class="user-cart">
-                    <a href=""><i class="fas fa-user"></i></a>
-                    <a href=""><i class="fas fa-shopping-cart"></i></a>
-                </section>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/icons/TastyPetsOriginal.png" alt="LogoPrincipal" class="navbar-logo"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTastyPets" aria-controls="navbarTastyPets" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>        
+            <section class="collapse navbar-collapse justify-content-end " id="navbarTastyPets">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link fs-5 me-3" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 me-3" href="./pages/Conócenos.html">Conócenos</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 me-3" href="./pages/Tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 me-3" href="./pages/PeluqueriaCanina.html">Peluqueria Canina</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 me-5" href="#">EducaPet</a></li>
+                </ul>
             </section>
         </nav>
     </header>
@@ -83,44 +71,48 @@
         </article>
     </main>
     <footer class="footer">
-        <section class="footer-complete">
-            <section class="footer-section">
-                <h3>Localiza tu tienda</h3>
-                <p>Con orgullo formamos una familia con 5 tiendas TastyPets distribuidas en la Región de O'Higgins, garantizando que siempre tengas una tienda TastyPets cerca tuyo. ¡<a href="#">Busca la más cercana</a> y experimenta el mejor servicio para ti y tus mascotas!</p>
-            </section>
-            <section class="footer-section">
-                <h3>Mi cuenta</h3>
-                <ul>
-                    <li><a href="#">Entrar en mi cuenta</a></li>
-                    <li><a href="#">Mis Pedidos</a></li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <h3>Guía de Compras</h3>
-                <ul>
-                    <li><a href="#">Información de envío</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <h3>Contacto</h3>
-                <ul>
-                    <li>Mail: <a href="#">ventas@tastypets.cl</a></li>
-                    <li>Teléfono: +569 72XX XXXX</li>
-                    <li>WhatsApp: <a href="web.whatsapp.com">+569 72XX XXXX</a></li>
-                    <li><a href="#">Canal de denuncias</a></li>
-                    <li>Servicio de atención: Lunes a Sábado 09:00 a 18:00 hrs</li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <h3>Trabaja con Nosotros</h3>
-                <ul>
-                    <li><a href="./pages/Conócenos.html">Acerca de TastyPets</a></li>
-                    <li><a href="#">Trabaja con Nosotros</a></li>
-                </ul>
+        <section class="container">
+            <section class="row">
+                <section class="col-sm-6 col-md-3">
+                    <h3 class="fs-5 text-start">Localiza tu tienda</h3>
+                    <p class="pt-2">Con orgullo formamos una familia con 5 tiendas TastyPets distribuidas en la Región de O'Higgins, garantizando que siempre tengas una tienda TastyPets cerca tuyo. ¡Busca la más cercana y experimenta el mejor servicio para ti y tus mascotas!</p>
+                </section>
+                <section class="col-sm-6 col-md-2">
+                    <h3 class="fs-5 text-start">Mi cuenta</h3>
+                    <ul class="list-unstyled">
+                        <li class="text-start pt-2"><a href="#">Entrar en mi cuenta</a></li>
+                        <li class="text-start pt-2"><a href="#">Mis Pedidos</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-6 col-md-2">
+                    <h3 class="fs-5 text-start">Guía de Compras</h3>
+                    <ul class="list-unstyled">
+                        <li class="text-start pt-2"><a href="#">Información de envío</a></li>
+                        <li class="text-start pt-2"><a href="#">Preguntas Frecuentes</a></li>
+                        <li class="text-start pt-2"><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-6 col-md-2">
+                    <h3 class="fs-5 text-start">Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li class="text-start pt-2">Mail: ventas@tastypets.cl</li>
+                        <li class="text-start pt-2">Teléfono: +569 72XX XXXX</li>
+                        <li class="text-start pt-2">WhatsApp: +569 72XX XXXX</li>
+                        <li class="text-start pt-2"><a href="#">Canal de denuncias</a></li>
+                        <li class="text-start pt-2">Servicio de atención: Lunes a Sábado 09:00 a 18:00 hrs</li>
+                    </ul>                    
+                </section>
+                <section class="col-sm-6 col-md-2">
+                    <h3 class="fs-5 text-start">Trabaja con Nosotros</h3>
+                    <ul class="list-unstyled">
+                        <li class="text-start pt-2"><a href="./pages/Conócenos.html">Acerca de TastyPets</a></li>
+                        <li class="text-start pt-2"><a href="#">Trabaja con Nosotros</a></li>
+                    </ul>
+                </section>
+
             </section>
         </section>
-    </footer>
+    </footer> 
+    <script src="./js/bootstrap.bundle.min.js"></script>   
 </body>
 </html>
